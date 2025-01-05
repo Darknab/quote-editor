@@ -13,7 +13,7 @@ class QuotesTest < ApplicationSystemTestCase
 
     # When we click on the link with the text "New quote"
     # we expect to land on a page with the title "New quote"
-    click_on "New_quote"
+    click_on "New quote"
     assert_selector "h1", text: "New quote"
 
     # When we fill in the name input with "Capybara quote"
@@ -24,7 +24,7 @@ class QuotesTest < ApplicationSystemTestCase
     # we expect to be back on the page with the title "Quotes"
     # and to see our "Capybara quote" added to the list
     assert_selector "h1", text: "Quotes"
-    asset_text "Capybara quote"
+    assert_text "Capybara quote"
   end
 
   test "Showing a quote" do
@@ -36,15 +36,15 @@ class QuotesTest < ApplicationSystemTestCase
 
   test "Updating a quote" do
     visit quotes_path
-    asset_selector "h1", text: "Quotes"
+    assert_selector "h1", text: "Quotes"
 
     click_on "Edit", match: :first
-    asset_selector "h1", text: "Edit quote"
+    assert_selector "h1", text: "Edit quote"
 
     fill_in "Name", with: "Updated quote"
     click_on "Update quote"
 
-    asset_selector "h1", text: "Quotes"
+    assert_selector "h1", text: "Quotes"
     assert_text "Updated quote"
   end
 
