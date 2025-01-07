@@ -8,3 +8,14 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+@import "config/variables.css";
+@import "config/_reset.css";
+
+@import "components/_btn.css";
+@import "components/_error_message.css";
+@import "components/_form.css";
+@import "components/_quote.css";
+@import "components/_visually_hidden.css";
+
+@import "layouts/_container.css";
+@import "layouts/_header.css";
