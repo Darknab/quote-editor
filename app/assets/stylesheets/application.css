@@ -8,14 +8,15 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
-@import "config/variables.css";
-@import "config/_reset.css";
+@import url("config/_variables.css");
+@import url("config/_reset.css");
 
-@import "components/_btn.css";
-@import "components/_error_message.css";
-@import "components/_form.css";
-@import "components/_quote.css";
-@import "components/_visually_hidden.css";
+@import url("components/_btn.css");
+@import url("components/_error_message.css");
+@import url("components/_form.css");
+@import url("components/_quote.css");
+@import url("components/_visually_hidden.css");
+@import url("components/_turbo_progress_bar.css");
 
-@import "layouts/_container.css";
-@import "layouts/_header.css";
+@import url("layouts/_container.css");
+@import url("layouts/_header.css");
