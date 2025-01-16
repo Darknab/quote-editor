@@ -21,6 +21,7 @@
 @import url("components/_navbar.css");
 @import url("components/_flash.css");
 @import url("components/_empty_state.css");
+@import url("components/_line_item_date.css");
 
 @import url("layouts/_container.css");
 @import url("layouts/_header.css");
