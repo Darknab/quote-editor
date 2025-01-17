@@ -1,4 +1,4 @@
-class LineItemDateController < ApplicationController
+class LineItemDatesController < ApplicationController
   before_action :set_quote
 
   def new
