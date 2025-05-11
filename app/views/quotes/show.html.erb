@@ -14,7 +14,7 @@
     <%= turbo_frame_tag LineItemDate.new %>
 
     <%= turbo_frame_tag "line_item_dates" do %>
-        <%= render action: "show", locals: { quote: @quote, line_item_dates: @line_item_dates } %>
+        <%= render partial: "line_item_dates/line_item_date", collection: @line_item_dates, as: :line_item_date, locals: { quote: @quote } %>
     <% end %>
 </main>
 
